@@ -26,7 +26,7 @@ def app(car_df):
       if st.checkbox("View Column Datatype"):
         st.table(list(car_df.dtypes))
 
-    with beat_col3:
+    with beta_col3:
       if st.checkbox("View Column Data"):
         column_data = st.selectbox('Select column', tuple(car_df.columns)) 
         st.write(car_df[column_data])
